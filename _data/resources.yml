@@ -1,0 +1,21 @@
+# Helpful resources on the Parents page.
+# Put each PDF in assets/docs and add its path after "file:".
+# Items with no file show "Available from the school office".
+- title: School calendar
+  description: Term dates, holidays and key events for the year.
+  file: /assets/docs/ICPS_School_Calendar_2026-2027_Term_1_Portrait.pdf
+- title: Booklists
+  description: Recommended texts and supplies for each grade.
+  file: ""
+- title: Uniform guide
+  description: Everything you need to know about our school uniform.
+  file: ""
+- title: Fees and payments
+  description: Tuition information and payment options.
+  file: ""
+- title: Newsletters
+  description: Our regular school newsletters.
+  file: ""
+- title: Policies
+  description: Our key school policies and code of conduct.
+  file: ""

@@ -1,0 +1,15 @@
+# Curriculum downloads on the Programmes page.
+# Put each PDF in assets/docs and add its path after "file:".
+# Levels with no file show "Available from the school office".
+- level: Pre-school
+  file: ""
+- level: Kindergarten
+  file: ""
+- level: Grades 1 to 3
+  file: ""
+- level: Grade 4
+  file: ""
+- level: Grade 5
+  file: ""
+- level: Grade 6
+  file: ""

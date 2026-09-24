@@ -1,0 +1,49 @@
+---
+layout: page
+title: News and events
+lede: Celebrating the achievements and moments that make our community special.
+description: News and upcoming events at Immaculate Conception Preparatory School, Kingston.
+---
+
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% capture upcoming %}{% for e in site.data.events %}{% if e.date >= today %}
+      <li>
+        <time datetime="{{ e.date }}"><b>{{ e.date | date: "%-d" }}</b>{{ e.date | date: "%b" }}</time>
+        <div><h3>{{ e.title }}</h3><p>{{ e.description }}</p></div>
+      </li>{% endif %}{% endfor %}{% endcapture %}
+{% assign upcoming = upcoming | strip %}
+{% if upcoming != "" %}
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Upcoming events</h2>
+    <ul class="events">
+      {{ upcoming }}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Latest news</h2>
+    <ul class="news-list">
+      {% for post in site.posts %}
+      <li class="news-item{% unless post.image %} no-image{% endunless %}">
+        {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt }}" loading="lazy">{% endif %}
+        <div>
+          <p>{{ post.category }}, {{ post.date | date: "%B %-d, %Y" }}</p>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.summary %}<p class="summary">{{ post.summary }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2>Never miss a moment</h2>
+    <p>Follow us on Instagram at <a href="https://instagram.com/{{ site.school.instagram }}">@{{ site.school.instagram }}</a>, and visit the <a href="{{ '/parents/' | relative_url }}">parent hub</a> for calendars and resources.</p>
+  </div>
+</section>

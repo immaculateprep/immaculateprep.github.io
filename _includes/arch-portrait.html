@@ -1,0 +1,23 @@
+{% comment %}
+  Arched window portrait with the school motto running over the arch.
+  Params: src, alt, id (unique per page), motto (optional)
+{% endcomment %}
+<svg class="arch" viewBox="0 0 120 152" role="img" aria-label="{{ include.alt }}">
+  <defs>
+    <clipPath id="arch-clip-{{ include.id }}">
+      <path d="M10 152 L10 62 A50 50 0 0 1 110 62 L110 152 Z"/>
+    </clipPath>
+    <path id="arch-text-{{ include.id }}" d="M4 62 A56 56 0 0 1 116 62"/>
+  </defs>
+  <path class="arch__frame" d="M4 152 L4 62 M116 62 L116 152"/>
+  <image href="{{ include.src | relative_url }}" x="10" y="12" width="100" height="140" preserveAspectRatio="xMidYMid slice" clip-path="url(#arch-clip-{{ include.id }})"/>
+  {% if include.motto %}
+  <text class="arch__motto"><textPath href="#arch-text-{{ include.id }}" startOffset="50%" text-anchor="middle">{{ include.motto }}</textPath></text>
+  {% endif %}
+  <g class="arch__stars">
+    <path class="arch__star" style="--i:0" transform="translate(6.5 34)" d="M0,-3.2 L.8,-.8 L3.2,0 L.8,.8 L0,3.2 L-.8,.8 L-3.2,0 L-.8,-.8Z"/>
+    <path class="arch__star" style="--i:1" transform="translate(16 20) scale(.6)" d="M0,-3.2 L.8,-.8 L3.2,0 L.8,.8 L0,3.2 L-.8,.8 L-3.2,0 L-.8,-.8Z"/>
+    <path class="arch__star" style="--i:2" transform="translate(104 20) scale(.6)" d="M0,-3.2 L.8,-.8 L3.2,0 L.8,.8 L0,3.2 L-.8,.8 L-3.2,0 L-.8,-.8Z"/>
+    <path class="arch__star" style="--i:3" transform="translate(113.5 34)" d="M0,-3.2 L.8,-.8 L3.2,0 L.8,.8 L0,3.2 L-.8,.8 L-3.2,0 L-.8,-.8Z"/>
+  </g>
+</svg>

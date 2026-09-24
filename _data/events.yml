@@ -1,0 +1,18 @@
+# Upcoming events on the News page. Events whose date has passed are
+# hidden automatically the next time the site is updated.
+# Keep dates in quotes, in YYYY-MM-DD format.
+- date: "2026-09-05"
+  title: First day of term
+  description: Welcome back! Classes resume for the new academic year.
+- date: "2026-09-27"
+  title: Grandparents' Day Mass
+  description: A special celebration honouring our grandparents and elders.
+- date: "2026-10-18"
+  title: Open Day for prospective families
+  description: Tour the campus and meet our staff. All welcome.
+- date: "2026-11-01"
+  title: All Saints' Day assembly
+  description: A whole-school celebration of our faith and patron saints.
+- date: "2026-12-13"
+  title: Christmas carol service
+  description: Join us for an evening of carols, readings and community.

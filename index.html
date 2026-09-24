@@ -1,0 +1,107 @@
+---
+layout: default
+title: Where excellence begins
+description: A Roman Catholic preparatory school in Kingston, Jamaica, building exceptional young children through faith, excellence, character and care.
+---
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <h1>Where excellence begins.</h1>
+      <p class="lede">A Roman Catholic preparatory school in Kingston, building exceptional young children through faith, excellence, character and care.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="{{ '/admissions/' | relative_url }}">Apply for admission</a>
+        <a class="btn btn--ghost" href="{{ '/contact-us/' | relative_url }}">Contact the school</a>
+      </div>
+    </div>
+    <figure class="hero__figure">
+      {% include arch-portrait.html id="principal" src="/assets/img/mrs-grant.jpg" alt="Mrs. Ann-Marie Grant, Principal" motto="Ad astra per aspera" %}
+      <blockquote>
+        <p>We don't just teach students; we nurture future leaders with a foundation in faith.</p>
+        <cite><strong>{{ site.school.principal }}</strong>, Principal</cite>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="wrap split split--top">
+    <div>
+      <h2>A legacy of nurturing excellence</h2>
+    </div>
+    <div class="prose">
+      <p>As a pillar of the Kingston community, Immaculate Conception Preparatory School has been dedicated to the holistic development of children. Our mission is to provide an environment where faith and reason go hand in hand.</p>
+      <p>We believe that every girl is a unique gift, and our role is to help her discover her God-given potential. Through a rigorous academic curriculum and a rich range of extracurricular activities, we prepare our children for the challenges of tomorrow.</p>
+      <p><a class="text-link" href="{{ '/about-us/' | relative_url }}">Read our story</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Why parents trust Immaculate Prep</h2>
+      <p class="lede">Founded on faith and integrity, we provide a structured environment where your child can truly thrive. We meet every child where they are and help them be the best they can be.</p>
+    </div>
+    <ul class="reasons">
+      <li><h3>{% include star.html %}Strong academic foundation</h3><p>A rigorous curriculum designed for deep understanding and critical thinking.</p></li>
+      <li><h3>{% include star.html %}Faith and character</h3><p>Rooted in Catholic values, with a focus on spiritual growth and moral integrity.</p></li>
+      <li><h3>{% include star.html %}Caring teachers</h3><p>Dedicated educators who see every child as a unique member of our family.</p></li>
+      <li><h3>{% include star.html %}Safe and structured</h3><p>A secure campus where discipline and freedom go hand in hand.</p></li>
+      <li><h3>{% include star.html %}Clear communication</h3><p>A modern digital portal keeping parents connected every step of the way.</p></li>
+      <li><h3>{% include star.html %}Holistic development</h3><p>Nurturing mind, body and spirit through the arts and sports.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="wrap split split--reverse">
+    <div>
+      <img class="arched-photo" src="{{ '/assets/img/icps-ph-student-photo.jpg' | relative_url }}" alt="An Immaculate Prep student" loading="lazy">
+    </div>
+    <div>
+      <h2>A modern digital experience for today's parents</h2>
+      <p class="lede">Our new parent portal will make sure you never miss a milestone.</p>
+      <ul class="star-list star-list--cols">
+        <li>{% include star.html %}Digital report cards</li>
+        <li>{% include star.html %}Timely announcements</li>
+        <li>{% include star.html %}Event alerts by SMS and email</li>
+        <li>{% include star.html %}School calendar sync</li>
+        <li>{% include star.html %}Messages with teachers</li>
+        <li>{% include star.html %}Attendance updates</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn--primary" href="{{ site.calendar_pdf | relative_url }}">Download the school calendar</a>
+        <span class="btn btn--ghost" aria-disabled="true">Parent portal coming soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="news-head">
+      <h2>News and events</h2>
+      <a class="text-link" href="{{ '/news-events/' | relative_url }}">View all news</a>
+    </div>
+    <ul class="news-grid">
+      {% for post in site.posts limit:3 %}
+      <li class="news-item">
+        {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt }}" loading="lazy">{% endif %}
+        <p>{{ post.category }}, {{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta__inner">
+    <div>
+      <h2>Give your child a strong start</h2>
+      <p>Discover a school community built on faith, excellence, discipline and care. Admissions for the upcoming academic year are now open.</p>
+    </div>
+    <div><a class="btn btn--light" href="{{ '/admissions/' | relative_url }}">Start your application</a></div>
+  </div>
+</section>

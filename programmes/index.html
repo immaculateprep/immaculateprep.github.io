@@ -1,0 +1,85 @@
+---
+layout: page
+title: Academics and curriculum
+lede: A well-rounded, faith-centred education designed to help every child thrive.
+description: Academic levels, subjects, curricula and activities at Immaculate Conception Preparatory School, Kingston.
+---
+
+<section>
+  <div class="wrap prose">
+    <h2>A curriculum built for growth</h2>
+    <p>Our academic programme blends rigorous learning with the formation of character and faith. From the early years through to graduation, we nurture curiosity, critical thinking and a lifelong love of learning, so that each girl is well prepared for the next stage of her education.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Our academic levels</h2>
+    <ul class="reasons reasons--two">
+      <li><span class="meta">Ages 2 to 4</span><h3>Pre-school</h3><p>A joyful, play-based foundation in literacy, numeracy and social skills, rooted in care and Christian values. Open to boys and girls. <a href="{{ '/pre-school/' | relative_url }}">More about pre-school</a></p></li>
+      <li><span class="meta">Ages 3 to 5</span><h3>Kindergarten</h3><p>Builds a strong foundation for reading, writing and maths while nurturing confidence and curiosity.</p></li>
+      <li><span class="meta">Grades 1 to 3</span><h3>Lower school</h3><p>Blends academics with creative and personal development to encourage a lifelong love of learning.</p></li>
+      <li><span class="meta">Grades 4 to 6</span><h3>Upper school</h3><p>Balances academic rigour with student leadership opportunities, preparing students for success in high school.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">What our students learn</h2>
+    <ul class="star-list star-list--cols" style="max-width:40rem">
+      <li>{% include star.html %}Language arts</li>
+      <li>{% include star.html %}Reading</li>
+      <li>{% include star.html %}Mathematics</li>
+      <li>{% include star.html %}Science</li>
+      <li>{% include star.html %}Social studies</li>
+      <li>{% include star.html %}Religious education</li>
+      <li>{% include star.html %}Information technology</li>
+      <li>{% include star.html %}Spanish</li>
+      <li>{% include star.html %}Visual and performing arts</li>
+      <li>{% include star.html %}Physical education</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Curricula</h2>
+    <ul class="downloads">
+      {% for c in site.data.curricula %}
+      <li>
+        <h3>{{ c.level }}</h3>
+        {% if c.file != "" %}<p><a href="{{ c.file | relative_url }}">Download the curriculum (PDF)</a></p>
+        {% else %}<p>Available from the school office.</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Beyond the classroom</h2>
+      <p>After-school activities give every student the chance to discover her talents and passions.</p>
+    </div>
+    <ul class="reasons">
+      <li><h3>{% include star.html %}Choir and music</h3><p>A vibrant music programme, from choir to instrumental training.</p></li>
+      <li><h3>{% include star.html %}Sports and games</h3><p>Netball, athletics and more to build teamwork and fitness.</p></li>
+      <li><h3>{% include star.html %}Chess club</h3><p>Our students frequently win top individual and female category prizes in regional rapid chess tournaments.</p></li>
+      <li><h3>{% include star.html %}Dance</h3><p>Movement, rhythm and performance for every level.</p></li>
+      <li><h3>{% include star.html %}Swimming</h3><p>Water confidence and swimming skills that last a lifetime.</p></li>
+      <li><h3>{% include star.html %}Faith and service</h3><p>Retreats, outreach and living out our Catholic values.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta__inner">
+    <div>
+      <h2>Ready to learn more?</h2>
+      <p>See how our programmes prepare your daughter for a bright future.</p>
+    </div>
+    <div><a class="btn btn--light" href="{{ '/admissions/' | relative_url }}">Start the admissions process</a></div>
+  </div>
+</section>

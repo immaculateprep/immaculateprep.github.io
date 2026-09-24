@@ -1,0 +1,84 @@
+---
+layout: page
+title: Our story
+lede: A legacy of faith, excellence and character in the heart of Kingston.
+description: The mission, vision, values and leadership of Immaculate Conception Preparatory School in Kingston, Jamaica.
+---
+
+<section>
+  <div class="wrap split split--top">
+    <div class="prose">
+      <h2>Nurturing excellence since our foundation</h2>
+      <p>Immaculate Conception Preparatory School is a Roman Catholic institution dedicated to the holistic formation of young girls. For generations, our doors have welcomed families across Kingston who seek an education rooted in faith, discipline and academic rigour.</p>
+      <p>We believe every girl is a unique gift, called to discover her God-given potential. Through a nurturing environment and a commitment to excellence, we prepare our students for lives of purpose, integrity and service.</p>
+      <p>Our pre-school welcomes both boys and girls from age two.</p>
+    </div>
+    <blockquote class="pullquote">
+      <p>We don't just teach students; we nurture future leaders with a foundation in faith.</p>
+      <cite>{{ site.school.principal }}, Principal</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Guided by purpose</h2>
+      <p>Our mission and vision shape everything we do, from the classroom to the chapel.</p>
+    </div>
+    <ul class="reasons reasons--two">
+      <li><h3>Our mission</h3><p>Motivated by the teaching of the Gospel and inspired by the example of St. Francis of Assisi, the school community works together as a family, in close association with parents, for the total development of each child.</p></li>
+      <li><h3>Our vision</h3><p>ICPS is committed to providing the right environment to enable children to achieve their full potential.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Our core values</h2>
+      <p>The principles that guide our students and shape our community every day.</p>
+    </div>
+    <ul class="reasons">
+      <li><h3>{% include star.html %}Faith</h3><p>Through our prayer and actions we acknowledge our dependence on and belief in God and self.</p></li>
+      <li><h3>{% include star.html %}Respect</h3><p>We show reverence for God and all creation through acceptance of self and others.</p></li>
+      <li><h3>{% include star.html %}Hope</h3><p>We trust in God to strengthen us in our commitment to achieve our goals.</p></li>
+      <li><h3>{% include star.html %}Love</h3><p>In simplicity and humility we practise love of God, others and self.</p></li>
+      <li><h3>{% include star.html %}Unity</h3><p>We achieve unity through a deep sense of responsibility, honesty and openness with each other.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2>Our motto</h2>
+    <p><em>Ad astra per aspera</em>: through difficulties to the stars. We teach our girls that effort, perseverance and faith carry them further than they imagine.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Our leadership</h2>
+      <p>A dedicated team devoted to the growth of every student.</p>
+    </div>
+    <ul class="people">
+      {% for person in site.data.leadership %}
+      <li><strong>{{ person.name }}</strong><span>{{ person.role }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta__inner">
+    <div>
+      <h2>Come and see our community</h2>
+      <p>We warmly invite you to learn more about admissions and visit our campus. To arrange a tour, email or call the school office.</p>
+    </div>
+    <div class="actions" style="margin-top:0">
+      <a class="btn btn--light" href="mailto:{{ site.school.email }}?subject=School%20tour">Email us</a>
+      <a class="btn btn--light" href="tel:{{ site.school.phone_link }}">Call {{ site.school.phone_display }}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+# ------------------------------------------------------------
+# Site settings. Change school details here once and they
+# update across every page.
+# ------------------------------------------------------------
+title: Immaculate Conception Preparatory School
+short_name: Immaculate Prep
+description: A Roman Catholic preparatory school in Kingston, Jamaica, building exceptional young children through faith, excellence, character and care.
+url: https://immaculateprep.edu.jm
+baseurl: ""
+lang: en-JM
+logo: /assets/img/icps-logo.png
+
+school:
+  address: 152 Constant Spring Road, Kingston 8, Jamaica
+  map_query: 152 Constant Spring Road, Kingston 8, Jamaica
+  phone_display: (876) 925-2819      # confirm: old site showed this but dialled 876-924-0000
+  phone_link: "+18769252819"
+  email: immaculate.prep@gmail.com
+  instagram: immaculateprepja
+  facebook: ""                       # add the full page URL if the school wants it shown
+  principal: Mrs. Ann-Marie Grant
+  office_hours: Monday to Friday, 8:00 a.m. to 3:30 p.m.
+  school_hours: Monday to Friday, 8:00 a.m. to 2:30 p.m.
+
+calendar_pdf: /assets/docs/ICPS_School_Calendar_2026-2027_Term_1_Portrait.pdf
+
+# Slim bar at the top of every page. Leave blank to hide it.
+announcement: The 2026/27 academic calendar is out.
+announcement_link_text: Download it
+announcement_link: /assets/docs/ICPS_School_Calendar_2026-2027_Term_1_Portrait.pdf
+
+permalink: /news-events/:year/:month/:title/
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - fetch-assets.sh
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <img src="{{ site.logo | relative_url }}" alt="" width="64" height="64">
+      <p class="site-footer__name">Immaculate Conception Preparatory School</p>
+      <p>Nurturing young children through faith, academic excellence and character formation in the Catholic tradition.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="{{ '/about-us/' | relative_url }}">Our story</a></li>
+        <li><a href="{{ '/programmes/' | relative_url }}">Curriculum</a></li>
+        <li><a href="{{ '/admissions/' | relative_url }}">How to apply</a></li>
+        <li><a href="{{ '/student-life/' | relative_url }}">Student life</a></li>
+        <li><a href="{{ '/parents/' | relative_url }}">Parent resources</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>For families</h2>
+      <ul>
+        <li><a href="{{ site.calendar_pdf | relative_url }}">School calendar (PDF)</a></li>
+        <li><a href="mailto:{{ site.school.email }}">Email the school office</a></li>
+        <li>Parent portal <span class="muted">(coming soon)</span></li>
+        <li>Teacher portal <span class="muted">(coming soon)</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <address>
+        <p>{{ site.school.address }}</p>
+        <p><a href="tel:{{ site.school.phone_link }}">{{ site.school.phone_display }}</a></p>
+        <p><a href="mailto:{{ site.school.email }}">{{ site.school.email }}</a></p>
+        {% if site.school.instagram != "" %}<p><a href="https://instagram.com/{{ site.school.instagram }}">Instagram: @{{ site.school.instagram }}</a></p>{% endif %}
+        {% if site.school.facebook != "" %}<p><a href="{{ site.school.facebook }}">Facebook</a></p>{% endif %}
+      </address>
+    </div>
+  </div>
+  <div class="wrap site-footer__base">
+    <p>&copy; {{ site.time | date: "%Y" }} Immaculate Conception Preparatory School. All rights reserved.</p>
+    <p><a href="{{ '/privacy-policy/' | relative_url }}">Privacy policy</a></p>
+  </div>
+</footer>

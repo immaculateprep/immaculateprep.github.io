@@ -1,0 +1,99 @@
+---
+layout: page
+title: Parent hub
+lede: Everything you need to stay connected to your child's school life.
+description: Home School Association, parent portal, resources and FAQs for Immaculate Prep families.
+---
+
+<section>
+  <div class="wrap prose">
+    <h2>Partners in your child's success</h2>
+    <p>We believe a strong partnership between home and school is essential to every child's growth. This hub brings together the tools, resources and information you need to stay informed and involved throughout the year.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2>The Home School Association</h2>
+    <p>As soon as a child is accepted into the Immaculate Conception Preparatory School family, her parents automatically become members of the Home School Association (HSA). The Association held its inaugural meeting on Wednesday, December 3, 1969.</p>
+    <p>The HSA gives parents and teachers the opportunity to get to know each other, and gives parents first-hand knowledge of the school, its policies, its challenges and the education being offered to their daughters. The committee is made up of dedicated parents and teachers who volunteer their time and energy to make sure our students' interests are best served. The Association also organises fundraising events and helps with school functions.</p>
+
+    <h3>Meetings</h3>
+    <p>Meetings are held on the last Wednesday of each month at 4:00 p.m., and all parents are encouraged to attend. In addition to the Annual General Meeting, special meetings each year give parents the chance to meet class teachers and discuss the goals for their daughter's year.</p>
+    <p>All parents and guardians are expected to support these meetings and the fundraising activities planned by the HSA Executive Committee. A child's progress depends on the active involvement of three people: the student, her teacher and, most importantly, you. This partnership does not fail.</p>
+
+    <h3>The executive</h3>
+    <p>The school has long been blessed with a vibrant, hardworking and warm-hearted HSA Executive. It includes the President, Vice-President, Secretary, Treasurer, Staff Representative and Class Representatives, elected at the start of each school year. Class Representatives are encouraged to serve for no longer than two years, and may not use parents' email addresses for personal purposes.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split split--top">
+    <div class="prose">
+      <h2>Parent portal</h2>
+      <p>Our secure parent portal is coming soon. It will keep you connected to your child's progress and school life, anytime and anywhere. You'll log in with details provided by the school office.</p>
+    </div>
+    <ul class="star-list">
+      <li>{% include star.html %}View report cards</li>
+      <li>{% include star.html %}Track attendance</li>
+      <li>{% include star.html %}Read announcements</li>
+      <li>{% include star.html %}Check the calendar</li>
+      <li>{% include star.html %}Message teachers</li>
+      <li>{% include star.html %}Pay fees online</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section__intro">
+      <h2>Helpful resources</h2>
+      <p>Quick links to the information families need most.</p>
+    </div>
+    <ul class="downloads">
+      {% for r in site.data.resources %}
+      <li>
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.description }}</p>
+        {% if r.file != "" %}<p><a href="{{ r.file | relative_url }}">Download (PDF)</a></p>
+        {% else %}<p>Available from the school office.</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>What are the school hours?</summary>
+        <p>The school day runs from 8:00 a.m. to 2:30 p.m., Monday to Friday, with supervised early drop-off and after-care available.</p>
+      </details>
+      <details>
+        <summary>How do I report an absence?</summary>
+        <p>Please call or email the school office before 8:30 a.m. on the day of the absence.</p>
+      </details>
+      <details>
+        <summary>Does the school provide meals?</summary>
+        <p>A healthy canteen service is available. Students may also bring lunch from home.</p>
+      </details>
+      <details>
+        <summary>How can I get involved?</summary>
+        <p>We warmly welcome parent volunteers, and every family is part of the Home School Association. Speak to the office to learn more.</p>
+      </details>
+      <details>
+        <summary>Who do I contact with a concern?</summary>
+        <p>Your daughter's class teacher is your first point of contact. The office can also direct you to the right person.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2>Still have questions?</h2>
+    <p>Our office team is always happy to help. Call <a href="tel:{{ site.school.phone_link }}">{{ site.school.phone_display }}</a> or email <a href="mailto:{{ site.school.email }}">{{ site.school.email }}</a>. The office is open {{ site.school.office_hours }}</p>
+  </div>
+</section>

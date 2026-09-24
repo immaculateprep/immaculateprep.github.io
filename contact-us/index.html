@@ -1,0 +1,27 @@
+---
+layout: page
+title: Get in touch
+lede: We are here to answer your questions and welcome your family.
+description: Address, phone, email and office hours for Immaculate Conception Preparatory School, Kingston.
+---
+
+<section>
+  <div class="wrap split split--top">
+    <div>
+      <p class="lede" style="margin-bottom:2rem">Whether you have a question about admissions, programmes or school life, our office team is happy to help. To apply for a place, see <a href="{{ '/admissions/' | relative_url }}#apply">how to apply</a>.</p>
+      <dl class="details">
+        <div><dt>Address</dt><dd>{{ site.school.address }}</dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:{{ site.school.phone_link }}">{{ site.school.phone_display }}</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:{{ site.school.email }}">{{ site.school.email }}</a></dd></div>
+        <div><dt>Office hours</dt><dd>{{ site.school.office_hours }}</dd></div>
+        {% if site.school.instagram != "" %}<div><dt>Instagram</dt><dd><a href="https://instagram.com/{{ site.school.instagram }}">@{{ site.school.instagram }}</a></dd></div>{% endif %}
+      </dl>
+      <div class="actions">
+        <a class="btn btn--primary" href="mailto:{{ site.school.email }}">Email us</a>
+        <a class="btn btn--ghost" href="tel:{{ site.school.phone_link }}">Call {{ site.school.phone_display }}</a>
+      </div>
+    </div>
+    <iframe class="map" title="Map showing the school's location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q={{ site.school.map_query | uri_escape }}&output=embed"></iframe>
+  </div>
+</section>
