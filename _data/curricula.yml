@@ -1,15 +1,15 @@
 # Curriculum downloads on the Programmes page.
-# Put each PDF in assets/docs and add its path after "file:".
+# Add a PDF's path after "file:" to show a download link.
 # Levels with no file show "Available from the school office".
 - level: Pre-school
   file: ""
 - level: Kindergarten
-  file: ""
+  file: /wp-content/uploads/2026/09/JECCG_Four-to-Five-Year-Old__final_intrnt.pdf
 - level: Grades 1 to 3
-  file: ""
+  file: /wp-content/uploads/2026/09/GuideGrade1-3.pdf
 - level: Grade 4
-  file: ""
+  file: /wp-content/uploads/2026/09/GuideGrade4.pdf
 - level: Grade 5
-  file: ""
+  file: /wp-content/uploads/2026/09/GuideGrade5.pdf
 - level: Grade 6
-  file: ""
+  file: /wp-content/uploads/2026/09/GuideGrade6.pdf

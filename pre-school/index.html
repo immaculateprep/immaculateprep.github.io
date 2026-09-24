@@ -8,7 +8,7 @@ description: The pre-school at Immaculate Conception Preparatory School, Kingsto
 <section>
   <div class="wrap split split--top">
     <div class="prose">
-      <h2>Where learning begins</h2>
+      <h2>A gentle start</h2>
       <p>Our pre-school welcomes children from as young as two, in two groups: our Twos (2 to 3 years) and our Threes (3 to 4 years). While Immaculate is a girls' school, our pre-school opens its doors to boys and girls alike.</p>
       <p>Each class is guided by one lead teacher and two assistant teachers, our "Aunties", who bring warmth and steady care to every day.</p>
     </div>
@@ -32,6 +32,17 @@ description: The pre-school at Immaculate Conception Preparatory School, Kingsto
     <h2>Kindness and belonging</h2>
     <p>Daily stories and warm, caring interactions with our teachers help children find the words for their needs and feelings. They learn to relate to one another gently and respectfully, living out the kindness at the heart of who we are at Immaculate Conception Preparatory School.</p>
     <p>Though our pre-school has its own rhythm, it's never far from the rest of the school family. Our little ones join the wider community whenever they can, including Friday morning prayers with everyone else.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Where learning begins</h2>
+    <ul class="gallery">
+      {% for g in site.data.preschool_gallery %}
+      <li><a href="{{ g.file | relative_url }}"><img src="{{ g.file | relative_url }}" alt="{{ g.alt }}" loading="lazy"></a></li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 

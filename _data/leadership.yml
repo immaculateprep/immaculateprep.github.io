@@ -1,10 +1,16 @@
+# Photos are optional. Leave photo blank to show the name only.
 - name: Mrs. Ann-Marie Grant
   role: Principal
+  photo: /wp-content/uploads/2026/09/mrs-grant.jpg
 - name: Mrs. Tanya Chung
   role: Lower school co-ordinator
+  photo: /wp-content/uploads/2026/08/about-tanya-chung.jpg
 - name: Mrs. Gina Harvey-Lewis
   role: Upper school co-ordinator
+  photo: /wp-content/uploads/2026/08/about-gina-harvey-lewis.jpg
 - name: Mrs. Susan Dodd-Williams
   role: Pre-school co-ordinator
+  photo: /wp-content/uploads/2026/09/Susan-Dodd-Williams.jpg
 - name: Mrs. Annell Petrie
   role: Kindergarten co-ordinator
+  photo: /wp-content/uploads/2026/09/Annell-Petrie-k-c.jpg

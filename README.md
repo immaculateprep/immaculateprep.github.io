@@ -23,7 +23,7 @@ Confirm with the school:
 - whether the six news stories are real or template placeholders
 - the event dates in `_data/events.yml` (the old site gave no year; 2026 is assumed)
 
-Downloads: copy the curriculum PDFs and parent resources (booklists, uniform guide, fees, newsletters, policies) from the mirror's `wp-content/uploads` folder into `assets/docs`, then add each path in `_data/curricula.yml` and `_data/resources.yml`. Items without a file say "Available from the school office".
+Images and PDFs from the old site live in `wp-content/uploads`, so old links still work. Parent resources (booklists, uniform guide, fees, newsletters, policies) weren't on the old site: when the school has them, upload the PDFs and add each path in `_data/resources.yml`. Items without a file say "Available from the school office".
 
 ## Everyday editing (all in the GitHub website, no software needed)
 
@@ -32,6 +32,7 @@ Downloads: copy the curriculum PDFs and parent resources (booklists, uniform gui
 - **Leadership team**: `_data/leadership.yml`
 - **Upcoming events**: `_data/events.yml` (past events hide automatically on the next update)
 - **Curriculum and resource downloads**: `_data/curricula.yml` and `_data/resources.yml`
+- **Leadership photos and pre-school gallery**: `_data/leadership.yml` and `_data/preschool_gallery.yml`
 - **Page text**: the `index.html` inside each folder (`about-us`, `admissions`, and so on). Edit the words between the tags and leave the tags alone.
 - **Add a news story**: create a file in `_posts` named `YYYY-MM-DD-short-title.md`, copy the top section from an existing post, change the title, category and image, and write the story below the second `---` line. It appears on the home page and the News page automatically.
 - **New calendar**: upload the PDF to `assets/docs` and update `calendar_pdf` and `announcement_link` in `_config.yml`.

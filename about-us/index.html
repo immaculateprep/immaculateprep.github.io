@@ -13,10 +13,7 @@ description: The mission, vision, values and leadership of Immaculate Conception
       <p>We believe every girl is a unique gift, called to discover her God-given potential. Through a nurturing environment and a commitment to excellence, we prepare our students for lives of purpose, integrity and service.</p>
       <p>Our pre-school welcomes both boys and girls from age two.</p>
     </div>
-    <blockquote class="pullquote">
-      <p>We don't just teach students; we nurture future leaders with a foundation in faith.</p>
-      <cite>{{ site.school.principal }}, Principal</cite>
-    </blockquote>
+    <img class="photo" src="{{ '/wp-content/uploads/2026/07/campus.jpg' | relative_url }}" alt="The Immaculate Conception Preparatory School campus on Constant Spring Road" loading="lazy">
   </div>
 </section>
 
@@ -64,7 +61,7 @@ description: The mission, vision, values and leadership of Immaculate Conception
     </div>
     <ul class="people">
       {% for person in site.data.leadership %}
-      <li><strong>{{ person.name }}</strong><span>{{ person.role }}</span></li>
+      <li>{% if person.photo and person.photo != "" %}<img src="{{ person.photo | relative_url }}" alt="" loading="lazy">{% endif %}<strong>{{ person.name }}</strong><span>{{ person.role }}</span></li>
       {% endfor %}
     </ul>
   </div>
